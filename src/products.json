@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gazelle Indoor",
+    "precio": 200,
+    "thumbnail": "./img/championes-adidas-gazelle-indoor-de-hombre-multicolor.webp",
+    "categoria": "Calzado",
+    "marca": "Adidas",
+    "genero": "Hombre"
+  },
+  {
+    "id": 2,
+    "nombre": "Courtquick",
+    "precio": 300,
+    "thumbnail": "./img/championes-courtquick-de-hombre-blanco.webp",
+    "categoria": "Calzado",
+    "marca": "Adidas",
+    "genero": "Hombre"
+  },
+  {
+    "id": 3,
+    "nombre": "Phantom GX ii Academy",
+    "precio": 350,
+    "thumbnail": "./img/championes-de-futbol-phantom-gx-ii-academy-fg-mg-de-hombre-rojo.webp",
+    "categoria": "Calzado",
+    "marca": "Nike",
+    "genero": "Hombre"
+  },
+  {
+    "id": 4,
+    "nombre": "Nike air max Excee",
+    "precio": 650,
+    "thumbnail": "./img/championes-nike-air-max-excee-de-hombre-multicolor.webp",
+    "categoria": "Calzado",
+    "marca": "Nike",
+    "genero": "Hombre"
+  },
+  {
+    "id": 5,
+    "nombre": "Predator league 11",
+    "precio": 600,
+    "thumbnail": "./img/championes-de-futbol-predator-league-ll-tf-de-hombre-multicolor.webp",
+    "categoria": "Calzado",
+    "marca": "Puma",
+    "genero": "Hombre"
+  },
+  {
+    "id": 6,
+    "nombre": "Park lifestyle easy",
+    "precio": 600,
+    "thumbnail": "./img/championes-park-lifestyle-easy-gamuza-de-hombre-azul.webp",
+    "categoria": "Calzado",
+    "marca": "Puma",
+    "genero": "Hombre"
+  },
+  {
+    "id": 7,
+    "nombre": "Duramo multicolor",
+    "precio": 1500,
+    "thumbnail": "./img/championes-duramo-de-mujer-multicolor.webp",
+    "categoria": "Calzado",
+    "marca": "Adidas",
+    "genero": "Mujer"
+  },
+  {
+    "id": 8,
+    "nombre": "Runfalcon 5 running",
+    "precio": 1500,
+    "thumbnail": "./img/championes-runfalcon-5-running-de-mujer-rosado.webp",
+    "categoria": "Calzado",
+    "marca": "Adidas",
+    "genero": "Mujer"
+  },
+  {
+    "id": 9,
+    "nombre": "Court vision",
+    "precio": 1500,
+    "thumbnail": "./img/championes-nike-court-vision-alta-de-mujer-blanco.webp",
+    "categoria": "Calzado",
+    "marca": "Nike",
+    "genero": "Mujer"
+  },
+  {
+    "id": 10,
+    "nombre": "Legend essential 4",
+    "precio": 1500,
+    "thumbnail": "./img/championes-nike-legend-essential-4-de-mujer-morado.webp",
+    "categoria": "Calzado",
+    "marca": "Nike",
+    "genero": "Mujer"
+  },
+  {
+    "id": 11,
+    "nombre": "Kermen ii animal flair",
+    "precio": 1500,
+    "thumbnail": "./img/championes-karmen-ii-animal-flair-de-mujer-multicolor.webp",
+    "categoria": "Calzado",
+    "marca": "Puma",
+    "genero": "Mujer"
+  },
+  {
+    "id": 12,
+    "nombre": "Jada classic",
+    "precio": 1500,
+    "thumbnail": "./img/championes-jada-classic-de-mujer-blanco.webp",
+    "categoria": "Calzado",
+    "marca": "Puma",
+    "genero": "Mujer"
+  },
+  {
+    "id": 13,
+    "nombre": "Abrigo tiro 25 essentials",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-tiro-25-essentials-de-hombre-negro.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Hombre"
+  },
+  {
+    "id": 14,
+    "nombre": "Camiseta adicolor outline",
+    "precio": 10,
+    "thumbnail": "./img/camiseta-adicolor-outline-trefoil-de-hombre-azul.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Hombre"
+  },
+  {
+    "id": 15,
+    "nombre": "Remera heritage graphic",
+    "precio": 10,
+    "thumbnail": "./img/remera-adidas-heritage-graphic-de-hombre-blanco.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Hombre"
+  },
+  {
+    "id": 16,
+    "nombre": "Pantalon largo run essential",
+    "precio": 10,
+    "thumbnail": "./img/pantalon-largo-run-essential-de-mujer-negro.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Mujer"
+  },
+  {
+    "id": 17,
+    "nombre": "Remera adizero essentials running",
+    "precio": 10,
+    "thumbnail": "./img/remera-adizero-essentials-running-de-mujer-celeste.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Mujer"
+  },
+  {
+    "id": 18,
+    "nombre": "Remera aeroready train",
+    "precio": 10,
+    "thumbnail": "./img/remera-aeroready-train-essentials-minimal-branding-de-mujer-morado.webp",
+    "categoria": "Indumentaria",
+    "marca": "Adidas",
+    "genero": "Mujer"
+  },
+  {
+    "id": 19,
+    "nombre": "Abrigo de Uruguay",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-de-uruguay-nike-de-hombre-negro.jpg",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Hombre"
+  },
+  {
+    "id": 20,
+    "nombre": "Abrigo sportwear windrunner",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-nike-sportswear-windrunner-de-hombre-chocolate.jpg",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Hombre"
+  },
+  {
+    "id": 21,
+    "nombre": "Remera para piscina",
+    "precio": 10,
+    "thumbnail": "./img/remera-para-piscina-manga-corta-hydroguard-de-hombre-blanco.webp",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Hombre"
+  },
+  {
+    "id": 22,
+    "nombre": "Abrigo nike club fleece",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-nike-sportswear-club-fleece-de-mujer-multicolor.jpg",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Mujer"
+  },
+  {
+    "id": 23,
+    "nombre": "Remera nike one classic",
+    "precio": 10,
+    "thumbnail": "./img/remera-nike-one-classic-de-mujer-morado.jpg",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Mujer"
+  },
+  {
+    "id": 24,
+    "nombre": "Remera Uruguay",
+    "precio": 10,
+    "thumbnail": "./img/remera-titular-uruguay-nike-stadium-de-mujer-azul.jpg",
+    "categoria": "Indumentaria",
+    "marca": "Nike",
+    "genero": "Mujer"
+  },
+  {
+    "id": 25,
+    "nombre": "Abrigo ess 2",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-ess-2-col-small-logo-hoodie-felpa-de-hombre-gris.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Hombre"
+  },
+  {
+    "id": 26,
+    "nombre": "Abrigo squad",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-squad-media-larga-tr-de-hombre-multicolor.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Hombre"
+  },
+  {
+    "id": 27,
+    "nombre": "Remera sport tee",
+    "precio": 10,
+    "thumbnail": "./img/remera-puma-sport-tee-de-hombre-multicolor.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Hombre"
+  },
+  {
+    "id": 28,
+    "nombre": "Abrigo ess hoodie",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-ess-logo-hoodie-felpa-de-mujer-multicolor.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Mujer"
+  },
+  {
+    "id": 29,
+    "nombre": "Abrigo ess oversized",
+    "precio": 10,
+    "thumbnail": "./img/abrigo-ess-oversized-hoodie-felpa-de-mujer-negro.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Mujer"
+  },
+  {
+    "id": 30,
+    "nombre": "Remera ess logo",
+    "precio": 10,
+    "thumbnail": "./img/remera-ess-no-1-logo-tee-de-mujer-negro.webp",
+    "categoria": "Indumentaria",
+    "marca": "Puma",
+    "genero": "Mujer"
+  },
+  {
+    "id": "703ee55a-22c5-412c-8b2d-93842eac7e5b",
+    "nombre": "Fernando",
+    "marca": "Umbro",
+    "precio": 7000,
+    "thumbnail": "/img/1765852926982-a.jpg",
+    "categoria": "Ropa"
+  },
+  {
+    "id": "8bd6be4e-466a-4532-8bd6-0e147ebd9ac4",
+    "nombre": "Fernando",
+    "marca": "Umbro",
+    "precio": 600,
+    "thumbnail": "/img/1765853310742-a.jpg",
+    "categoria": "Ropa"
+  }
+]

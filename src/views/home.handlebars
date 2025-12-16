@@ -1,0 +1,16 @@
+<div>
+    <h1>Home Page</h1>
+    <article id="product-container">
+    {{#each products}}
+        <div class="product-card">
+            <h2 class="product-name">{{this.nombre}}</h2>
+                <h3 class="product-brand">{{this.marca}}</h3>
+                <p class="product-category">{{this.categoria}}</p>
+                <img src="{{this.thumbnail}}" alt="{{this.nombre}}" class="product-image"/>
+                <p class="product-price">$ {{this.precio}}</p>
+        </div>
+    {{/each}}
+    </article>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
