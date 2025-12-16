@@ -31,6 +31,15 @@ io.on('connection', (socket) => {
         }
     });
 
+    socket.on('updateProduct', async (data) => {
+        try {
+            const updatedProducts = await productManager.setProductById(data.id, data.updates);
+            io.emit('updateProducts', updatedProducts);
+        } catch (error) {
+            console.error('Error al actualizar producto:', error);
+        }
+    });
+
     socket.on('disconnect', () => {
         console.log('Cliente desconectado');
     });
