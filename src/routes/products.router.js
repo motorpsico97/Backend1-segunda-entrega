@@ -15,7 +15,7 @@ productsRouter.post('/', uploader.single('file'), async (req, res) => {
         const precio = parseInt(req.body.precio);
         const thumbnail = '/img/' + req.file.filename;
 
-        await productManager.addProduct({
+        const updatedProducts = await productManager.addProduct({
             nombre,
             marca,
             precio,
@@ -23,11 +23,17 @@ productsRouter.post('/', uploader.single('file'), async (req, res) => {
             categoria
         });
 
-        
+        // Emitir evento a todos los clientes conectados
+        const io = req.app.get('io');
+        io.emit('updateProducts', updatedProducts);
+
+        res.redirect('/realTimeProducts');
     } catch (error) {
         console.error('Error al agregar el producto:', error);
+        res.status(500).send('Error al agregar el producto');
     }
 });
+
 
 
 

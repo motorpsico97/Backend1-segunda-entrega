@@ -16,14 +16,50 @@
 
     <article id="product-container">
     {{#each products}}
-        <div class="product-card">
+        <div class="product-card" data-id="{{this.id}}">
             <h2 class="product-name">{{this.nombre}}</h2>
                 <h3 class="product-brand">{{this.marca}}</h3>
                 <p class="product-category">{{this.categoria}}</p>
                 <img src="{{this.thumbnail}}" alt="{{this.nombre}}" class="product-image"/>
                 <p class="product-price">$ {{this.precio}}</p>
-                <button type="button">Eliminar</button>
+                <button type="button" class="delete-product" data-id="{{this.id}}">Eliminar</button>
         </div>
     {{/each}}
     </article>
 </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+
+    // Manejar click en botón de eliminar
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('delete-product')) {
+            const productId = e.target.dataset.id;
+            if (productId) {
+                socket.emit('deleteProduct', productId);
+            }
+        }
+    });
+
+    // Escuchar actualización de productos
+    socket.on('updateProducts', (products) => {
+        const container = document.getElementById('product-container');
+        container.innerHTML = '';
+        
+        products.forEach(product => {
+            const productCard = document.createElement('div');
+            productCard.className = 'product-card';
+            productCard.dataset.id = product.id;
+            productCard.innerHTML = `
+                <h2 class="product-name">${product.nombre}</h2>
+                <h3 class="product-brand">${product.marca}</h3>
+                <p class="product-category">${product.categoria}</p>
+                <img src="${product.thumbnail}" alt="${product.nombre}" class="product-image"/>
+                <p class="product-price">$ ${product.precio}</p>
+                <button type="button" class="delete-product" data-id="${product.id}">Eliminar</button>
+            `;
+            container.appendChild(productCard);
+        });
+    });
+</script>

@@ -4,6 +4,7 @@ import { engine } from 'express-handlebars';
 import viewsRouter from './routes/views.router.js';
 import {Server} from 'socket.io';
 import productsRouter from './routes/products.router.js';
+import ProductManager from './productManager.js';
 
 const app = express();
 const server = http.createServer(app);
@@ -12,7 +13,28 @@ app.use(express.urlencoded({ extended: true }));
 
 // WebSocket 
 const io = new Server(server);
+const productManager = new ProductManager('./src/products.json');
 
+// Hacer io accesible en los routers
+app.set('io', io);
+
+// Socket.IO events
+io.on('connection', (socket) => {
+    console.log('Cliente conectado');
+
+    socket.on('deleteProduct', async (productId) => {
+        try {
+            const updatedProducts = await productManager.deleteProductById(productId);
+            io.emit('updateProducts', updatedProducts);
+        } catch (error) {
+            console.error('Error al eliminar producto:', error);
+        }
+    });
+
+    socket.on('disconnect', () => {
+        console.log('Cliente desconectado');
+    });
+});
 
 //Handlebars configuration
 app.engine('handlebars', engine());

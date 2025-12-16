@@ -268,21 +268,5 @@
     "categoria": "Indumentaria",
     "marca": "Puma",
     "genero": "Mujer"
-  },
-  {
-    "id": "703ee55a-22c5-412c-8b2d-93842eac7e5b",
-    "nombre": "Fernando",
-    "marca": "Umbro",
-    "precio": 7000,
-    "thumbnail": "/img/1765852926982-a.jpg",
-    "categoria": "Ropa"
-  },
-  {
-    "id": "8bd6be4e-466a-4532-8bd6-0e147ebd9ac4",
-    "nombre": "Fernando",
-    "marca": "Umbro",
-    "precio": 600,
-    "thumbnail": "/img/1765853310742-a.jpg",
-    "categoria": "Ropa"
   }
 ]
