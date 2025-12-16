@@ -13,6 +13,7 @@ productsRouter.post('/', uploader.single('file'), async (req, res) => {
         const marca = req.body.marca;
         const categoria = req.body.categoria;
         const precio = parseInt(req.body.precio);
+        const genero = req.body.genero;
         const thumbnail = '/img/' + req.file.filename;
 
         const updatedProducts = await productManager.addProduct({
@@ -20,7 +21,8 @@ productsRouter.post('/', uploader.single('file'), async (req, res) => {
             marca,
             precio,
             thumbnail,
-            categoria
+            categoria,
+            genero
         });
 
         // Emitir evento a todos los clientes conectados

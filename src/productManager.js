@@ -1,4 +1,5 @@
 import fs from 'fs/promises';
+import path from 'path';
 // UUID
 import crypto, { generateKey } from 'crypto';
 
@@ -63,6 +64,27 @@ class ProductManager {
     async deleteProductById(pid){
         try {
             const products = await this.getProducts();
+
+            // Encontrar el producto a eliminar para obtener la ruta de la imagen
+            const productToDelete = products.find((product) => product.id === pid);
+            
+            if (!productToDelete) {
+                throw new Error(`El producto con el id: ${pid} no existe`);
+            }
+
+            // Eliminar la imagen física si existe
+            if (productToDelete.thumbnail) {
+                try {
+                    // Construir la ruta completa de la imagen
+                    // thumbnail viene como '/img/nombre-archivo.jpg'
+                    const imagePath = path.join('public', productToDelete.thumbnail);
+                    await fs.unlink(imagePath);
+                    console.log(`Imagen eliminada: ${imagePath}`);
+                } catch (imageError) {
+                    console.error(`Error al eliminar la imagen: ${imageError.message}`);
+                    // Continuar con la eliminación del producto aunque falle la eliminación de la imagen
+                }
+            }
 
             const filterProducts = products.filter((product) => product.id !== pid);
 
